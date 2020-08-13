@@ -1,0 +1,657 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
+// swift-module-flags: -target x86_64-apple-ios8.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name PingID_SDK
+import CommonCrypto
+import Compression
+import Foundation
+@_exported import PingID_SDK
+import Security
+import Swift
+public struct DecryptionContext {
+}
+public struct SymmetricDecryptionContext {
+}
+public struct Decrypter {
+  public init?<KeyType>(keyDecryptionAlgorithm: PingID_SDK.AsymmetricKeyAlgorithm, decryptionKey key: KeyType, contentDecryptionAlgorithm: PingID_SDK.SymmetricKeyAlgorithm)
+  @available(*, deprecated, message: "Use `init?(keyDecryptionAlgorithm:decryptionKey:contentDecyptionAlgorithm:)` instead")
+  public init?<KeyType>(keyDecryptionAlgorithm: PingID_SDK.AsymmetricKeyAlgorithm, keyDecryptionKey kdk: KeyType, contentDecryptionAlgorithm: PingID_SDK.SymmetricKeyAlgorithm)
+}
+public typealias ECPublicKeyComponents = (crv: Swift.String, x: Foundation.Data, y: Foundation.Data)
+public typealias ECPrivateKeyComponents = (crv: Swift.String, x: Foundation.Data, y: Foundation.Data, d: Foundation.Data)
+public protocol ExpressibleAsECPublicKeyComponents {
+  static func representing(ecPublicKeyComponents components: PingID_SDK.ECPublicKeyComponents) throws -> Self
+  func ecPublicKeyComponents() throws -> PingID_SDK.ECPublicKeyComponents
+}
+public protocol ExpressibleAsECPrivateKeyComponents {
+  static func representing(ecPrivateKeyComponents components: PingID_SDK.ECPrivateKeyComponents) throws -> Self
+  func ecPrivateKeyComponents() throws -> PingID_SDK.ECPrivateKeyComponents
+}
+public struct ECPublicKey : PingID_SDK.JWK {
+  public let keyType: PingID_SDK.JWKKeyType
+  public let parameters: [Swift.String : Swift.String]
+  public let crv: PingID_SDK.ECCurveType
+  public let x: Swift.String
+  public let y: Swift.String
+  public init(crv: PingID_SDK.ECCurveType, x: Swift.String, y: Swift.String, additionalParameters parameters: [Swift.String : Swift.String] = [:])
+  public init(publicKey: PingID_SDK.ExpressibleAsECPublicKeyComponents, additionalParameters parameters: [Swift.String : Swift.String] = [:]) throws
+  public init(data: Foundation.Data) throws
+  public func converted<T>(to type: T.Type) throws -> T where T : PingID_SDK.ExpressibleAsECPublicKeyComponents
+}
+public struct ECPrivateKey : PingID_SDK.JWK {
+  public let keyType: PingID_SDK.JWKKeyType
+  public let parameters: [Swift.String : Swift.String]
+  public let crv: PingID_SDK.ECCurveType
+  public let x: Swift.String
+  public let y: Swift.String
+  public let privateKey: Swift.String
+  public init(crv: Swift.String, x: Swift.String, y: Swift.String, privateKey: Swift.String, additionalParameters parameters: [Swift.String : Swift.String] = [:]) throws
+  public init(privateKey: PingID_SDK.ExpressibleAsECPrivateKeyComponents, additionalParameters parameters: [Swift.String : Swift.String] = [:]) throws
+  public init(data: Foundation.Data) throws
+  public func converted<T>(to type: T.Type) throws -> T where T : PingID_SDK.ExpressibleAsECPrivateKeyComponents
+}
+public typealias ECKeyPair = PingID_SDK.ECPrivateKey
+public struct EncryptionContext {
+}
+public struct SymmetricEncryptionContext {
+}
+public struct Encrypter<KeyType> {
+  public init?(keyEncryptionAlgorithm: PingID_SDK.AsymmetricKeyAlgorithm, encryptionKey key: KeyType, contentEncyptionAlgorithm: PingID_SDK.SymmetricKeyAlgorithm)
+  @available(*, deprecated, message: "Use `init?(keyEncryptionAlgorithm:encryptionKey:contentEncyptionAlgorithm:)` instead")
+  public init?(keyEncryptionAlgorithm: PingID_SDK.AsymmetricKeyAlgorithm, keyEncryptionKey kek: KeyType, contentEncyptionAlgorithm: PingID_SDK.SymmetricKeyAlgorithm)
+}
+public protocol CompactSerializable {
+  func serialize(to serializer: inout PingID_SDK.CompactSerializer)
+}
+public protocol CompactSerializer {
+  var components: [PingID_SDK.DataConvertible] { get }
+  mutating func serialize<T>(_ object: T) where T : PingID_SDK.DataConvertible
+}
+public struct JOSESerializer {
+  public func serialize<T>(compact object: T) -> Swift.String where T : PingID_SDK.CompactSerializable
+}
+public enum ECCurveType : Swift.String, Swift.Codable {
+  case P256
+  case P384
+  case P521
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+}
+public enum ECCompression : Swift.UInt8 {
+  case CompressedYEven
+  case CompressedYOdd
+  case Uncompressed
+  case HybridYEven
+  case HybridYOdd
+  public typealias RawValue = Swift.UInt8
+  public init?(rawValue: Swift.UInt8)
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+public struct JWKSet {
+  public let keys: [PingID_SDK.JWK]
+  public init(keys: [PingID_SDK.JWK])
+  public init(data: Foundation.Data) throws
+  public func jsonString() -> Swift.String?
+  public func jsonData() -> Foundation.Data?
+}
+extension JWKSet : Swift.Collection {
+  public typealias ArrayType = [PingID_SDK.JWK]
+  public typealias Element = PingID_SDK.JWKSet.ArrayType.Element
+  public typealias Index = PingID_SDK.JWKSet.ArrayType.Index
+  public typealias Iterator = PingID_SDK.JWKSet.ArrayType.Iterator
+  public var startIndex: PingID_SDK.JWKSet.Index {
+    get
+  }
+  public var endIndex: PingID_SDK.JWKSet.Index {
+    get
+  }
+  public subscript(index: PingID_SDK.JWKSet.Index) -> PingID_SDK.JWKSet.Element {
+    get
+  }
+  public func index(after i: PingID_SDK.JWKSet.Index) -> PingID_SDK.JWKSet.Index
+  public func makeIterator() -> Swift.IndexingIterator<PingID_SDK.JWKSet.ArrayType>
+  public typealias SubSequence = Swift.Slice<PingID_SDK.JWKSet>
+  public typealias Indices = Swift.DefaultIndices<PingID_SDK.JWKSet>
+}
+extension JWKSet : Swift.ExpressibleByArrayLiteral {
+  public typealias ArrayLiteralElement = PingID_SDK.JWKSet.Element
+  public init(arrayLiteral elements: PingID_SDK.JWKSet.ArrayLiteralElement...)
+}
+extension JWK {
+  public subscript(parameter: Swift.String) -> Swift.String? {
+    get
+  }
+}
+extension JWK {
+  public func jsonString() -> Swift.String?
+  public func jsonData() -> Foundation.Data?
+}
+@available(iOS 10.0, *)
+extension SecKey : PingID_SDK.ExpressibleAsRSAPublicKeyComponents {
+  public static func representing(rsaPublicKeyComponents components: PingID_SDK.RSAPublicKeyComponents) throws -> Self
+  public func rsaPublicKeyComponents() throws -> PingID_SDK.RSAPublicKeyComponents
+}
+public struct JWEHeader {
+  public init(algorithm: PingID_SDK.AsymmetricKeyAlgorithm, encryptionAlgorithm: PingID_SDK.SymmetricKeyAlgorithm)
+  public init(parameters: [Swift.String : Any]) throws
+}
+extension JWEHeader {
+  public var algorithm: PingID_SDK.AsymmetricKeyAlgorithm? {
+    get
+  }
+  public var encryptionAlgorithm: PingID_SDK.SymmetricKeyAlgorithm? {
+    get
+  }
+  public var compressionAlgorithm: PingID_SDK.CompressionAlgorithm? {
+    get
+  }
+  public var zip: Swift.String? {
+    get
+    set(newValue)
+  }
+}
+extension JWEHeader : PingID_SDK.CommonHeaderParameterSpace {
+  public var jku: Foundation.URL? {
+    get
+    set(newValue)
+  }
+  public var jwk: Swift.String? {
+    get
+    set(newValue)
+  }
+  public var kid: Swift.String? {
+    get
+    set(newValue)
+  }
+  public var x5u: Foundation.URL? {
+    get
+    set(newValue)
+  }
+  public var x5c: [Swift.String]? {
+    get
+    set(newValue)
+  }
+  public var x5t: Swift.String? {
+    get
+    set(newValue)
+  }
+  public var x5tS256: Swift.String? {
+    get
+    set(newValue)
+  }
+  public var typ: Swift.String? {
+    get
+    set(newValue)
+  }
+  public var cty: Swift.String? {
+    get
+    set(newValue)
+  }
+  public var crit: [Swift.String]? {
+    get
+    set(newValue)
+  }
+}
+extension Data : PingID_SDK.ExpressibleAsSymmetricKeyComponents {
+  public static func representing(symmetricKeyComponents components: PingID_SDK.SymmetricKeyComponents) throws -> Foundation.Data
+  public func symmetricKeyComponents() throws -> PingID_SDK.SymmetricKeyComponents
+}
+extension SecKey : PingID_SDK.ExpressibleAsECPrivateKeyComponents {
+  public static func representing(ecPrivateKeyComponents components: PingID_SDK.ECPrivateKeyComponents) throws -> Self
+  public func ecPrivateKeyComponents() throws -> PingID_SDK.ECPrivateKeyComponents
+}
+extension Data {
+  public init?(base64URLEncoded base64URLString: Swift.String)
+  public init?(base64URLEncoded base64URLData: Foundation.Data)
+  public func base64URLEncodedString() -> Swift.String
+  public func base64URLEncodedData() -> Foundation.Data
+}
+extension Data : PingID_SDK.DataConvertible {
+  public init(_ data: Foundation.Data)
+  public func data() -> Foundation.Data
+}
+extension ECPublicKey : Swift.Encodable {
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension ECPublicKey : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension ECPrivateKey : Swift.Encodable {
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension ECPrivateKey : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc @objcMembers public class JWEBuilder : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+@available(iOS 10.0, *)
+public struct Signer<KeyType> {
+  public init?(signingAlgorithm: PingID_SDK.SignatureAlgorithm, privateKey: KeyType)
+}
+public protocol CommonHeaderParameterSpace {
+  var jku: Foundation.URL? { get set }
+  var jwk: Swift.String? { get set }
+  var kid: Swift.String? { get set }
+  var x5u: Foundation.URL? { get set }
+  var x5c: [Swift.String]? { get set }
+  var x5t: Swift.String? { get set }
+  var x5tS256: Swift.String? { get set }
+  var typ: Swift.String? { get set }
+  var cty: Swift.String? { get set }
+  var crit: [Swift.String]? { get set }
+}
+public enum SecureRandomError : Swift.Error {
+  case failed(status: Darwin.OSStatus)
+}
+public struct SecureRandom {
+  public static func generate(count: Swift.Int) throws -> Foundation.Data
+}
+public struct Payload : PingID_SDK.DataConvertible {
+  public init(_ payload: Foundation.Data)
+  public func data() -> Foundation.Data
+}
+public enum SignatureAlgorithm : Swift.String {
+  case RS256
+  case RS512
+  case ES256
+  case ES384
+  case ES512
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum AsymmetricKeyAlgorithm : Swift.String, Swift.CaseIterable {
+  case RSA1_5
+  case RSAOAEP
+  case RSAOAEP256
+  case direct
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+  public typealias AllCases = [PingID_SDK.AsymmetricKeyAlgorithm]
+  public static var allCases: [PingID_SDK.AsymmetricKeyAlgorithm] {
+    get
+  }
+}
+public enum SymmetricKeyAlgorithm : Swift.String {
+  case A256CBCHS512
+  case A128CBCHS256
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum HMACAlgorithm : Swift.String {
+  case SHA512
+  case SHA256
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum CompressionAlgorithm : Swift.String {
+  case DEFLATE
+  case NONE
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension RSAPublicKey : Swift.Encodable {
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension RSAPublicKey : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension RSAPrivateKey : Swift.Encodable {
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension RSAPrivateKey : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum JWKParameter : Swift.String, Swift.CodingKey {
+  case keyType
+  case keyUse
+  case keyOperations
+  case algorithm
+  case keyIdentifier
+  case X509URL
+  case X509CertificateChain
+  case X509CertificateSHA1Thumbprint
+  case X509CertificateSHA256Thumbprint
+  public init?(stringValue: Swift.String)
+  public init?(intValue: Swift.Int)
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+  public var stringValue: Swift.String {
+    get
+  }
+  public var intValue: Swift.Int? {
+    get
+  }
+}
+public enum RSAParameter : Swift.String, Swift.CodingKey {
+  case modulus
+  case exponent
+  case privateExponent
+  public var stringValue: Swift.String {
+    get
+  }
+  public init?(stringValue: Swift.String)
+  public var intValue: Swift.Int? {
+    get
+  }
+  public init?(intValue: Swift.Int)
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum SymmetricKeyParameter : Swift.String, Swift.CodingKey {
+  case key
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+  public var stringValue: Swift.String {
+    get
+  }
+  public init?(stringValue: Swift.String)
+  public var intValue: Swift.Int? {
+    get
+  }
+  public init?(intValue: Swift.Int)
+}
+public enum ECParameter : Swift.String, Swift.CodingKey {
+  case curve
+  case x
+  case y
+  case privateKey
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+  public var stringValue: Swift.String {
+    get
+  }
+  public init?(stringValue: Swift.String)
+  public var intValue: Swift.Int? {
+    get
+  }
+  public init?(intValue: Swift.Int)
+}
+extension JWKSet : Swift.Encodable {
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension JWKSet : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+@available(iOS 10.0, *)
+public struct JWS {
+  public let header: PingID_SDK.JWSHeader
+  public let payload: PingID_SDK.Payload
+  public let signature: Foundation.Data
+  public var compactSerializedString: Swift.String {
+    get
+  }
+  public var compactSerializedData: Foundation.Data {
+    get
+  }
+  public init<KeyType>(header: PingID_SDK.JWSHeader, payload: PingID_SDK.Payload, signer: PingID_SDK.Signer<KeyType>) throws
+  public init(compactSerialization: Swift.String) throws
+  public init(compactSerialization: Foundation.Data) throws
+  @available(*, deprecated, message: "Use `isValid(for verifier:)` instead")
+  public func isValid<KeyType>(for publicKey: KeyType) -> Swift.Bool
+  @available(*, deprecated, message: "Use `validate(using verifier:)` instead")
+  public func validate<KeyType>(with publicKey: KeyType) throws -> PingID_SDK.JWS
+  public func validate(using verifier: PingID_SDK.Verifier) throws -> PingID_SDK.JWS
+  public func isValid(for verifier: PingID_SDK.Verifier) -> Swift.Bool
+}
+@available(iOS 10.0, *)
+extension JWS : PingID_SDK.CompactSerializable {
+  public func serialize(to serializer: inout PingID_SDK.CompactSerializer)
+}
+@available(iOS 10.0, *)
+extension JWS : PingID_SDK.CompactDeserializable {
+  public static var componentCount: Swift.Int {
+    get
+  }
+  public init(from deserializer: PingID_SDK.CompactDeserializer) throws
+}
+@available(iOS 10.0, *)
+extension Data : PingID_SDK.ExpressibleAsRSAPublicKeyComponents {
+  public static func representing(rsaPublicKeyComponents components: PingID_SDK.RSAPublicKeyComponents) throws -> Foundation.Data
+  public func rsaPublicKeyComponents() throws -> PingID_SDK.RSAPublicKeyComponents
+}
+public struct Verifier {
+  @available(iOS 10.0, *)
+  public init?<KeyType>(verifyingAlgorithm: PingID_SDK.SignatureAlgorithm, publicKey: KeyType)
+}
+public struct JWSHeader {
+  public init(algorithm: PingID_SDK.SignatureAlgorithm)
+  public init(parameters: [Swift.String : Any]) throws
+}
+extension JWSHeader {
+  public var algorithm: PingID_SDK.SignatureAlgorithm? {
+    get
+  }
+}
+extension JWSHeader : PingID_SDK.CommonHeaderParameterSpace {
+  public var jku: Foundation.URL? {
+    get
+    set(newValue)
+  }
+  public var jwk: Swift.String? {
+    get
+    set(newValue)
+  }
+  public var kid: Swift.String? {
+    get
+    set(newValue)
+  }
+  public var x5u: Foundation.URL? {
+    get
+    set(newValue)
+  }
+  public var x5c: [Swift.String]? {
+    get
+    set(newValue)
+  }
+  public var x5t: Swift.String? {
+    get
+    set(newValue)
+  }
+  public var x5tS256: Swift.String? {
+    get
+    set(newValue)
+  }
+  public var typ: Swift.String? {
+    get
+    set(newValue)
+  }
+  public var cty: Swift.String? {
+    get
+    set(newValue)
+  }
+  public var crit: [Swift.String]? {
+    get
+    set(newValue)
+  }
+}
+public enum JWKKeyType : Swift.String, Swift.Codable {
+  case RSA
+  case OCT
+  case EC
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+}
+public protocol JWK : Swift.Decodable, Swift.Encodable {
+  var keyType: PingID_SDK.JWKKeyType { get }
+  var parameters: [Swift.String : Swift.String] { get }
+  subscript(parameter: Swift.String) -> Swift.String? { get }
+  init(data: Foundation.Data) throws
+  func jsonString() -> Swift.String?
+  func jsonData() -> Foundation.Data?
+}
+public struct JWE {
+  public let header: PingID_SDK.JWEHeader
+  public let encryptedKey: Foundation.Data
+  public let initializationVector: Foundation.Data
+  public let ciphertext: Foundation.Data
+  public let authenticationTag: Foundation.Data
+  public var compactSerializedString: Swift.String {
+    get
+  }
+  public var compactSerializedData: Foundation.Data {
+    get
+  }
+  public init<KeyType>(header: PingID_SDK.JWEHeader, payload: PingID_SDK.Payload, encrypter: PingID_SDK.Encrypter<KeyType>) throws
+  public init(compactSerialization: Swift.String) throws
+  public init(compactSerialization: Foundation.Data) throws
+  @available(*, deprecated, message: "Use `decrypt(using decrypter:)` instead")
+  public func decrypt<KeyType>(with key: KeyType) throws -> PingID_SDK.Payload
+  public func decrypt(using decrypter: PingID_SDK.Decrypter) throws -> PingID_SDK.Payload
+}
+extension JWE : PingID_SDK.CompactSerializable {
+  public func serialize(to serializer: inout PingID_SDK.CompactSerializer)
+}
+extension JWE : PingID_SDK.CompactDeserializable {
+  public static var componentCount: Swift.Int {
+    get
+  }
+  public init(from deserializer: PingID_SDK.CompactDeserializer) throws
+}
+@available(iOS 10.0, *)
+public typealias RSAPublicKeyComponents = (modulus: Foundation.Data, exponent: Foundation.Data)
+public typealias RSAPrivateKeyComponents = (modulus: Foundation.Data, exponent: Foundation.Data, privateExponent: Foundation.Data)
+@available(iOS 10.0, *)
+public protocol ExpressibleAsRSAPublicKeyComponents {
+  static func representing(rsaPublicKeyComponents components: PingID_SDK.RSAPublicKeyComponents) throws -> Self
+  func rsaPublicKeyComponents() throws -> PingID_SDK.RSAPublicKeyComponents
+}
+public protocol ExpressibleAsRSAPrivateKeyComponents {
+  static func representing(rsaPrivateKeyComponents components: PingID_SDK.RSAPrivateKeyComponents) throws -> Self
+  func rsaPrivateKeyComponents() throws -> PingID_SDK.RSAPrivateKeyComponents
+}
+public struct RSAPublicKey : PingID_SDK.JWK {
+  public let keyType: PingID_SDK.JWKKeyType
+  public let parameters: [Swift.String : Swift.String]
+  public let modulus: Swift.String
+  public let exponent: Swift.String
+  public init(modulus: Swift.String, exponent: Swift.String, additionalParameters parameters: [Swift.String : Swift.String] = [:])
+  @available(iOS 10.0, *)
+  public init(publicKey: PingID_SDK.ExpressibleAsRSAPublicKeyComponents, additionalParameters parameters: [Swift.String : Swift.String] = [:]) throws
+  public init(data: Foundation.Data) throws
+  @available(iOS 10.0, *)
+  public func converted<T>(to type: T.Type) throws -> T where T : PingID_SDK.ExpressibleAsRSAPublicKeyComponents
+}
+public struct RSAPrivateKey : PingID_SDK.JWK {
+  public let keyType: PingID_SDK.JWKKeyType
+  public let parameters: [Swift.String : Swift.String]
+  public let modulus: Swift.String
+  public let exponent: Swift.String
+  public let privateExponent: Swift.String
+  public init(modulus: Swift.String, exponent: Swift.String, privateExponent: Swift.String, additionalParameters parameters: [Swift.String : Swift.String] = [:])
+  public init(privateKey: PingID_SDK.ExpressibleAsRSAPrivateKeyComponents, additionalParameters parameters: [Swift.String : Swift.String] = [:]) throws
+  public init(data: Foundation.Data) throws
+  public func converted<T>(to type: T.Type) throws -> T where T : PingID_SDK.ExpressibleAsRSAPrivateKeyComponents
+}
+public typealias RSAKeyPair = PingID_SDK.RSAPrivateKey
+public protocol DataConvertible {
+  init?(_ data: Foundation.Data)
+  func data() -> Foundation.Data
+}
+extension Data : PingID_SDK.ExpressibleAsECPrivateKeyComponents {
+  public static func representing(ecPrivateKeyComponents components: PingID_SDK.ECPrivateKeyComponents) throws -> Foundation.Data
+  public func ecPrivateKeyComponents() throws -> PingID_SDK.ECPrivateKeyComponents
+}
+public protocol CompactDeserializable {
+  static var componentCount: Swift.Int { get }
+  init(from deserializer: PingID_SDK.CompactDeserializer) throws
+}
+public protocol CompactDeserializer {
+  func deserialize<T>(_ type: T.Type, at index: Swift.Int) throws -> T where T : PingID_SDK.DataConvertible
+}
+public struct JOSEDeserializer {
+  public init()
+  public func deserialize<T>(_ type: T.Type, fromCompactSerialization compactSerialization: Swift.String) throws -> T where T : PingID_SDK.CompactDeserializable
+}
+public enum ComponentCompactSerializedIndex {
+}
+extension SymmetricKey : Swift.Encodable {
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension SymmetricKey : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension SecKey : PingID_SDK.ExpressibleAsECPublicKeyComponents {
+  public static func representing(ecPublicKeyComponents components: PingID_SDK.ECPublicKeyComponents) throws -> Self
+  public func ecPublicKeyComponents() throws -> PingID_SDK.ECPublicKeyComponents
+}
+public typealias SymmetricKeyComponents = (Foundation.Data)
+public protocol ExpressibleAsSymmetricKeyComponents {
+  static func representing(symmetricKeyComponents components: PingID_SDK.SymmetricKeyComponents) throws -> Self
+  func symmetricKeyComponents() throws -> PingID_SDK.SymmetricKeyComponents
+}
+public struct SymmetricKey : PingID_SDK.JWK {
+  public let keyType: PingID_SDK.JWKKeyType
+  public let parameters: [Swift.String : Swift.String]
+  public let key: Swift.String
+  public init(key: Foundation.Data, additionalParameters parameters: [Swift.String : Swift.String] = [:])
+  public init(key: PingID_SDK.ExpressibleAsSymmetricKeyComponents, additionalParameters parameters: [Swift.String : Swift.String] = [:]) throws
+  public init(data: Foundation.Data) throws
+  public func converted<T>(to type: T.Type) throws -> T where T : PingID_SDK.ExpressibleAsSymmetricKeyComponents
+}
+extension Data : PingID_SDK.ExpressibleAsECPublicKeyComponents {
+  public static func representing(ecPublicKeyComponents components: PingID_SDK.ECPublicKeyComponents) throws -> Foundation.Data
+  public func ecPublicKeyComponents() throws -> PingID_SDK.ECPublicKeyComponents
+}
+public enum JOSESwiftError : Swift.Error {
+  case signingFailed(description: Swift.String)
+  case verifyingFailed(description: Swift.String)
+  case signatureInvalid
+  case encryptingFailed(description: Swift.String)
+  case decryptingFailed(description: Swift.String)
+  case wrongDataEncoding(data: Foundation.Data)
+  case invalidCompactSerializationComponentCount(count: Swift.Int)
+  case componentNotValidBase64URL(component: Swift.String)
+  case componentCouldNotBeInitializedFromData(data: Foundation.Data)
+  case couldNotConstructJWK
+  case modulusNotBase64URLUIntEncoded
+  case exponentNotBase64URLUIntEncoded
+  case privateExponentNotBase64URLUIntEncoded
+  case symmetricKeyNotBase64URLEncoded
+  case xNotBase64URLUIntEncoded
+  case yNotBase64URLUIntEncoded
+  case privateKeyNotBase64URLUIntEncoded
+  case invalidCurveType
+  case compressedCurvePointsUnsupported
+  case invalidCurvePointOctetLength
+  case compressionFailed
+  case decompressionFailed
+  case compressionAlgorithmNotSupported
+}
+extension PingID_SDK.JWEHeader : PingID_SDK.DataConvertible {}
+extension PingID_SDK.JWSHeader : PingID_SDK.DataConvertible {}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="166313" started-at="2020-08-12T13:01:05 BST" finished-at="2020-08-12T13:03:51 BST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="166313" started-at="2020-08-12T13:01:05 BST" finished-at="2020-08-12T13:03:51 BST">
+      <class name="com.aib.authapp.e2e_authapp_testfw.OnBoardingTest">
+        <test-method status="PASS" signature="onBoarding_androidTest()[pri:0, instance:com.aib.authapp.e2e_authapp_testfw.OnBoardingTest@1e7c7811]" name="onBoarding_androidTest" duration-ms="91855" started-at="2020-08-12T13:01:05 BST" finished-at="2020-08-12T13:02:37 BST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onBoarding_androidTest -->
+        <test-method status="PASS" signature="onBoarding_iPhoneTest()[pri:0, instance:com.aib.authapp.e2e_authapp_testfw.OnBoardingTest@1e7c7811]" name="onBoarding_iPhoneTest" duration-ms="74302" started-at="2020-08-12T13:02:37 BST" finished-at="2020-08-12T13:03:51 BST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onBoarding_iPhoneTest -->
+      </class> <!-- com.aib.authapp.e2e_authapp_testfw.OnBoardingTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

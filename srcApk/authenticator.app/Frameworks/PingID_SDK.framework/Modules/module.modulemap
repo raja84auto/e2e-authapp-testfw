@@ -1,0 +1,8 @@
+framework module PingID_SDK {
+umbrella header "PingID.h"
+}
+
+module PingID_SDK.Swift {
+    header "PingID_SDK-Swift.h"
+    requires objc
+}

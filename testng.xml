@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>      
+      <class name="com.aib.authapp.e2e_authapp_testfw.OnBoardingTest">
+      <!--  <methods> <exclude name="onBoarding_androidTest" /></methods>  -->
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
