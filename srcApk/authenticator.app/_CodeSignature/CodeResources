@@ -6,11 +6,11 @@
 	<dict>
 		<key>AccessibilityResources.bundle/Info.plist</key>
 		<data>
-		2JW8Ax/eW9nSe8vN8wtpx9ny9ag=
+		OS7kf/E9+HcuOy/WnSVinwlmEZM=
 		</data>
 		<key>AccessibilityResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		TPHDjhIDXVrfo9GKjBa1HSgG2oA=
+		Lue1lOq8tGHWSRckr7nsg9KtGl0=
 		</data>
 		<key>AccessibilityResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>AccessibilityResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		vfeEHIWPmh5N9pHgwYsDsZLmuLg=
+		A4tj6yzh8OIRLC8i8GIqorhNi/8=
 		</data>
 		<key>AccessibilityResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -41,29 +41,9 @@
 		<data>
 		TneGhDkoD7Q01Gl8e5EScUBsgfM=
 		</data>
-		<key>Aspira-Black.otf</key>
-		<data>
-		jHYuuVyBoT5qU178tKRravNNvQ4=
-		</data>
-		<key>Aspira-Bold.otf</key>
-		<data>
-		FktAfqsGYFH5FZhJRs1h6nClLGI=
-		</data>
-		<key>Aspira-Light.otf</key>
-		<data>
-		VpeQtoC5ifnRp2kTE+c9JXdus6U=
-		</data>
-		<key>Aspira-Medium.otf</key>
-		<data>
-		jwDV4KB9+JCJg1d2+LsqB/rRARw=
-		</data>
-		<key>Aspira-Regular.otf</key>
-		<data>
-		6hulxF1HzZYiaCKJWOejsrE9dII=
-		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		tIzRRsFJlpkuS+6J2vNG9KD9Kx4=
+		cX/iqHtnMynf+vAiLfsCJm8GGzs=
 		</data>
 		<key>Entypo.ttf</key>
 		<data>
@@ -159,7 +139,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		JvICRhENZCApj/he9sRQRGsxOxE=
+		m9m0HjG6TO9HCM9OL1RdamDb/nM=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
@@ -185,10 +165,6 @@
 		<data>
 		n/uBpaEREuKS8swyPphIa61ZdZk=
 		</data>
-		<key>SpaceMono-Regular.ttf</key>
-		<data>
-		+uOlpDtQ4ECP1h4UOD2UoCPTMrA=
-		</data>
 		<key>Zocial.ttf</key>
 		<data>
 		C9pZx7zT05J94EfgkYdaRCi/0as=
@@ -200,14 +176,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ujnQ98c7EMo9Mqp+dXi8K5Ryd0kDv3mWgfWcZHbNrP8=
+			4vO2ciY3suDi1J++rDcFnsOwb0WgrSsnCIIA2HGskiI=
 			</data>
 		</dict>
 		<key>AccessibilityResources.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			H+1AwHZJuqqqk1WTdvLcEfKsEEH7dz2Wd+vQIjOaV0M=
+			Q05z2irT43Ko+Y9C1WLq/IRexLlxKu7xXLG9HOKCRP4=
 			</data>
 		</dict>
 		<key>AccessibilityResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -221,7 +197,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WPjue0cQZpIJtyS5VO4jLjQMOMZb1WB9R8tTqBG4GGg=
+			l73ZuhudX1Lp5hi5f3FMpvv1+LvU5ObQc3ZY8KUkoZI=
 			</data>
 		</dict>
 		<key>AccessibilityResources.bundle/_CodeSignature/CodeResources</key>
@@ -254,46 +230,11 @@
 			eVXKFBJ7MEEsEU6xPP1wK12rJl/rGIDRaV1zyqgkzeE=
 			</data>
 		</dict>
-		<key>Aspira-Black.otf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7zxjpyP/9VIZPpfsodbutEZrN/tDr8slXE9ft4i7V7E=
-			</data>
-		</dict>
-		<key>Aspira-Bold.otf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			s2avKmAe+H8MyzVxyaIBY5vz62zGLIwW/GAquh2yI4s=
-			</data>
-		</dict>
-		<key>Aspira-Light.otf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			spFcqst+xf90aICjxtmkxXoFpLt8w3qt6Lr8rNglRGc=
-			</data>
-		</dict>
-		<key>Aspira-Medium.otf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			R+Nkb6S77tgeZvjklTeQEbncL2U6hHUmLj7kPJCcV8s=
-			</data>
-		</dict>
-		<key>Aspira-Regular.otf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			T54yvmkSa6K1/fKVPyxURfZAE1RsAhA2wK21gaHjDBU=
-			</data>
-		</dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xWufMixi1212hdru1dSEMxqkUbtrfhawT/WdLpBg5wQ=
+			YMQLfRih8AQ81CUC7LBgaiLo6yFPLShtqOYvLtN1vKQ=
 			</data>
 		</dict>
 		<key>Entypo.ttf</key>
@@ -490,13 +431,6 @@
 			<key>hash2</key>
 			<data>
 			P1Ad2wXHCCm7tRz+nKn/9X854GBFfCV7PM8l33Z/CHA=
-			</data>
-		</dict>
-		<key>SpaceMono-Regular.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			TDIlFNJlBiqj9/vYH1t5ORzLdCaOaiBgAGHgzjMjT0E=
 			</data>
 		</dict>
 		<key>Zocial.ttf</key>

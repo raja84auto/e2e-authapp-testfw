@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.aib.authapp.e2e_authapp_testfw.OnBoardingTest">
+      <class name="com.aib.authapp.e2e_authapp_testfw.AuthApp_e2eTest">
         <methods>
-          <include name="onBoarding_androidTest"/>
+          <include name="authApp_e2e_androidTest"/>
         </methods>
-      </class> <!-- com.aib.authapp.e2e_authapp_testfw.OnBoardingTest -->
+      </class> <!-- com.aib.authapp.e2e_authapp_testfw.AuthApp_e2eTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

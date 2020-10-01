@@ -28,7 +28,8 @@ public class Base {
 		File appFile = new File(appDir, "authenticator.app");
 		
 		DesiredCapabilities caps = new DesiredCapabilities();
-		caps.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 11");
+		//caps.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 11");
+		caps.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 8");
 		caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "IOS");
 		caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "13.6");
 		// ios and iphone version 10.2+
@@ -73,7 +74,7 @@ public class Base {
 		caps.setCapability(MobileCapabilityType.APP, apkFile.getAbsolutePath());
 		androidDriver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), caps); // debug
 		
-		androidDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		androidDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 					
 		
 		/* 
