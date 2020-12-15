@@ -5,7 +5,7 @@
     <classes>
       <class name="com.aib.authapp.e2e_authapp_testfw.AuthApp_e2eTest">
         <methods>
-          <include name="authApp_e2e_androidTest"/>
+          <include name="authApp_e2e_iPhoneTest"/>
         </methods>
       </class> <!-- com.aib.authapp.e2e_authapp_testfw.AuthApp_e2eTest -->
     </classes>

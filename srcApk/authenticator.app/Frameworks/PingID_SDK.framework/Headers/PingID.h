@@ -1,5 +1,5 @@
 //
-//  PingID SDK version 1.5.0
+//  PingID SDK version 1.6.0
 //
 //  Copyright (c) 2017 Ping Identity. All rights reserved.
 //

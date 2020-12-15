@@ -1,13 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="2" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="295400" started-at="2020-10-01T21:41:22 BST" finished-at="2020-10-01T21:46:17 BST">
+  <suite name="Suite" duration-ms="77644" started-at="2020-12-15T19:10:32 GMT" finished-at="2020-12-15T19:11:50 GMT">
     <groups>
     </groups>
-    <test name="Test" duration-ms="295400" started-at="2020-10-01T21:41:22 BST" finished-at="2020-10-01T21:46:17 BST">
+    <test name="Test" duration-ms="77644" started-at="2020-12-15T19:10:32 GMT" finished-at="2020-12-15T19:11:50 GMT">
       <class name="com.aib.authapp.e2e_authapp_testfw.AuthApp_e2eTest">
-        <test-method status="PASS" signature="authApp_e2e_iPhoneTest()[pri:0, instance:com.aib.authapp.e2e_authapp_testfw.AuthApp_e2eTest@77f99a05]" name="authApp_e2e_iPhoneTest" duration-ms="295291" started-at="2020-10-01T21:41:22 BST" finished-at="2020-10-01T21:46:17 BST">
+        <test-method status="FAIL" signature="authApp_e2e_iPhoneTest()[pri:0, instance:com.aib.authapp.e2e_authapp_testfw.AuthApp_e2eTest@bb8ead8]" name="authApp_e2e_iPhoneTest" duration-ms="77521" started-at="2020-12-15T19:10:33 GMT" finished-at="2020-12-15T19:11:50 GMT">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Macbooks-MacBook-Pro.local', ip: 'fdaa:bbcc:ddee:0:78e2:b311:9545:4bc5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_131'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/macbookpro/Documents..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 8, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, platform: MAC, platformName: IOS, platformVersion: 13.6, takesScreenshot: true, udid: 89A5DCB2-1586-4B4D-A32A-0FE..., webStorageEnabled: false}
+Session ID: 755d5dfe-e390-465d-b45d-99bf7bf4766a
+*** Element info: {Using=-ios class chain, value=**/XCUIElementTypeButton[`label == "Continue"`]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Macbooks-MacBook-Pro.local', ip: 'fdaa:bbcc:ddee:0:78e2:b311:9545:4bc5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_131'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/macbookpro/Documents..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 8, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, platform: MAC, platformName: IOS, platformVersion: 13.6, takesScreenshot: true, udid: 89A5DCB2-1586-4B4D-A32A-0FE..., webStorageEnabled: false}
+Session ID: 755d5dfe-e390-465d-b45d-99bf7bf4766a
+*** Element info: {Using=-ios class chain, value=**/XCUIElementTypeButton[`label == "Continue"`]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+at io.appium.java_client.FindsByIosClassChain.findElementByIosClassChain(FindsByIosClassChain.java:26)
+at com.aib.authapp.e2e_authapp_testfw.AuthApp_e2eTest.iosPopup_LoginPingFed(AuthApp_e2eTest.java:416)
+at com.aib.authapp.e2e_authapp_testfw.AuthApp_e2eTest.authApp_e2e_iPhoneTest(AuthApp_e2eTest.java:66)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1249)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authApp_e2e_iPhoneTest -->

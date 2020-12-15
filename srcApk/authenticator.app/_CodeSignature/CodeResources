@@ -6,11 +6,11 @@
 	<dict>
 		<key>AccessibilityResources.bundle/Info.plist</key>
 		<data>
-		OS7kf/E9+HcuOy/WnSVinwlmEZM=
+		HFWETcYbuds/8tUZmnKZ/PzbL/w=
 		</data>
 		<key>AccessibilityResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		Lue1lOq8tGHWSRckr7nsg9KtGl0=
+		ZwByFAitRUHbSx5uysV5kLn0ulw=
 		</data>
 		<key>AccessibilityResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>AccessibilityResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		A4tj6yzh8OIRLC8i8GIqorhNi/8=
+		0n4sH25RHaZJftxSUqfpWhrWpFU=
 		</data>
 		<key>AccessibilityResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -41,9 +41,17 @@
 		<data>
 		TneGhDkoD7Q01Gl8e5EScUBsgfM=
 		</data>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		eOPLWuUd6VlM3W1DA7tBIqpu1og=
+		</data>
+		<key>Assets.car</key>
+		<data>
+		jZYu9i7BD/HTkzQbT6mOhzMqtR4=
+		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		cX/iqHtnMynf+vAiLfsCJm8GGzs=
+		dkBS5DkZUfCjhuUc/P8eaf/uXeQ=
 		</data>
 		<key>Entypo.ttf</key>
 		<data>
@@ -83,47 +91,63 @@
 		</data>
 		<key>Frameworks/PingID_SDK.framework/Headers/PingID.h</key>
 		<data>
-		vIi/7Nj7aAvOPnMlI+iF8hshvoE=
+		shwM4IkKB46lfing4UqLUaM7yVk=
 		</data>
 		<key>Frameworks/PingID_SDK.framework/Headers/PingID_SDK-Swift.h</key>
 		<data>
-		pe9F2QM/xQMkwsy9dSMFGMh5m68=
+		/4GGBGLDKXQBsI/RFXhFsPOmJOg=
 		</data>
 		<key>Frameworks/PingID_SDK.framework/Info.plist</key>
 		<data>
-		RvoUsGDVDoIThAWywK2n1Qo1Dio=
+		d6FLS9zMJk14JhEvKQK3i+dojhQ=
+		</data>
+		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		U2ZXJ2QTEkze1w+lrTGw12scLHo=
+		</data>
+		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		N5nKpYoS8WIc60NyNDVXjUsBCHc=
+		</data>
+		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64.swiftdoc</key>
+		<data>
+		U2ZXJ2QTEkze1w+lrTGw12scLHo=
+		</data>
+		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64.swiftinterface</key>
+		<data>
+		N5nKpYoS8WIc60NyNDVXjUsBCHc=
 		</data>
 		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
-		mwYGNt/sedTHSXHn5e53+geQHo0=
+		a9X0N450p0RZBOk/uU0K1UMpgu0=
 		</data>
 		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ezjzXCMV3G6amRK6KlauVs2P3VE=
+		hfrDTq/9Uez7ipfgv+D//LSGMfA=
 		</data>
 		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/i386.swiftdoc</key>
 		<data>
-		mwYGNt/sedTHSXHn5e53+geQHo0=
+		a9X0N450p0RZBOk/uU0K1UMpgu0=
 		</data>
 		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/i386.swiftinterface</key>
 		<data>
-		ezjzXCMV3G6amRK6KlauVs2P3VE=
+		hfrDTq/9Uez7ipfgv+D//LSGMfA=
 		</data>
 		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		cdb8xIU1WbnlbzxJV/CzJGKZJPw=
+		f7CwWxbjh8p0rtGSviycfx4JhX4=
 		</data>
 		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		RWCvL+CVoCHaHoIYgpus4IhiI14=
+		u5z3n+5y3roc5EZwL66CPBTG6ww=
 		</data>
 		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		cdb8xIU1WbnlbzxJV/CzJGKZJPw=
+		f7CwWxbjh8p0rtGSviycfx4JhX4=
 		</data>
 		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		RWCvL+CVoCHaHoIYgpus4IhiI14=
+		u5z3n+5y3roc5EZwL66CPBTG6ww=
 		</data>
 		<key>Frameworks/PingID_SDK.framework/Modules/module.modulemap</key>
 		<data>
@@ -131,15 +155,15 @@
 		</data>
 		<key>Frameworks/PingID_SDK.framework/PingID_SDK</key>
 		<data>
-		c+Q5UjZZsYM+CJL+Xctsk1oZocg=
+		Cf/Z4Bx+Lns0KeT7h+uEYiSvCQY=
 		</data>
 		<key>Frameworks/PingID_SDK.framework/_CodeSignature/CodeResources</key>
 		<data>
-		6fTWVJUmkGJxJLG2SJPMLHQM7Ks=
+		yGbPBQBI+Ew9FvLkpRycH98ISTI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		m9m0HjG6TO9HCM9OL1RdamDb/nM=
+		YAr0vk/ARH1Rlg1gSRN7CJw8pms=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
@@ -176,14 +200,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4vO2ciY3suDi1J++rDcFnsOwb0WgrSsnCIIA2HGskiI=
+			TBT1KqtQG83pvn4hH6psEzvDOPdmdIwdFFqptq96z8U=
 			</data>
 		</dict>
 		<key>AccessibilityResources.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q05z2irT43Ko+Y9C1WLq/IRexLlxKu7xXLG9HOKCRP4=
+			EnpROakjpQyjkzMml1Q8DFvSh2J0brEv1KnPMgW703Q=
 			</data>
 		</dict>
 		<key>AccessibilityResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -197,7 +221,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l73ZuhudX1Lp5hi5f3FMpvv1+LvU5ObQc3ZY8KUkoZI=
+			65s8FfvBKZCxhlp55nz/uIhH4IKpUgIvkKIUkVu8QhQ=
 			</data>
 		</dict>
 		<key>AccessibilityResources.bundle/_CodeSignature/CodeResources</key>
@@ -230,11 +254,25 @@
 			eVXKFBJ7MEEsEU6xPP1wK12rJl/rGIDRaV1zyqgkzeE=
 			</data>
 		</dict>
+		<key>AppIcon60x60@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2mCyfXwmpw/7O0KnrNlJNUuvy8dr2bCIjrYJ27VBJ0Q=
+			</data>
+		</dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fnHXmxhPYhwf8LAkqXwleD4KckH/s8M1uUWL6Dmndtw=
+			</data>
+		</dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YMQLfRih8AQ81CUC7LBgaiLo6yFPLShtqOYvLtN1vKQ=
+			3GAARQc/4Go++xlGESs3gMHPVizXwOUik74Dp57vWIk=
 			</data>
 		</dict>
 		<key>Entypo.ttf</key>
@@ -304,77 +342,105 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			O/IvRI1biWU4RAxl+/M4VSBTgV2nt2uRqzL+TweXEV0=
+			3vITcyilpxd34zGjaFUue7gL55J/t/K+ypPpJqx4iSg=
 			</data>
 		</dict>
 		<key>Frameworks/PingID_SDK.framework/Headers/PingID_SDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ar3FVQ8+oDc2OEUZ+RHgQQ0hv4/dpOz7tMC/ZVUZnfw=
+			VADx645NFsSpwcOLRnZ2zp2prDAOyUhhBGcG7rxIKc8=
 			</data>
 		</dict>
 		<key>Frameworks/PingID_SDK.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kyS4ph0o/QckH33zX/SLbpEPK+grZLKqZ9vj7ihxr58=
+			PBjtNw5swQpBGyVwFL+DF1fYI3+pq+OnZsYo8nnfv7M=
+			</data>
+		</dict>
+		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EWbDBt+D0oEalZIFgsfWBthCS6vBGwGCD4jDz6F8+WU=
+			</data>
+		</dict>
+		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FTXpi4N1MB7SuHRZpAu9ykjTCkLdYmXL0Ngpypqzvu0=
+			</data>
+		</dict>
+		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EWbDBt+D0oEalZIFgsfWBthCS6vBGwGCD4jDz6F8+WU=
+			</data>
+		</dict>
+		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FTXpi4N1MB7SuHRZpAu9ykjTCkLdYmXL0Ngpypqzvu0=
 			</data>
 		</dict>
 		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xi0coJNIydr7e+H5hi4CH16xt8suUeTAkHpZoydirhs=
+			/EEYXC4WJfDpFk98LZb35DNxQFN/mWSJC7mbKi0n4So=
 			</data>
 		</dict>
 		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ErrlYHXUfKTRnNOBBAqb8TAULGJnJ1Xigu22H/n/e9M=
+			ucy9TXMyQ/MhopTTAhjns0XkaOx7i1MNeoicq3tpElU=
 			</data>
 		</dict>
 		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xi0coJNIydr7e+H5hi4CH16xt8suUeTAkHpZoydirhs=
+			/EEYXC4WJfDpFk98LZb35DNxQFN/mWSJC7mbKi0n4So=
 			</data>
 		</dict>
 		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/i386.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ErrlYHXUfKTRnNOBBAqb8TAULGJnJ1Xigu22H/n/e9M=
+			ucy9TXMyQ/MhopTTAhjns0XkaOx7i1MNeoicq3tpElU=
 			</data>
 		</dict>
 		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XpXrEyHtj+GvcVLWNXmZ+i9cedfMOpFwrs68VbVPJXU=
+			gR6Vo8wdtCVaThiAM4Bo6Gfx0yuqqIPnnGJGYHu5DpM=
 			</data>
 		</dict>
 		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AqfShVx52pbM2u4Xjdr9Xq0o6BXFxTtSYwabckAU+DA=
+			rifEt/uCbRKKJAaznggpvk8DgOdzfuxL/LM0f4gkBks=
 			</data>
 		</dict>
 		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XpXrEyHtj+GvcVLWNXmZ+i9cedfMOpFwrs68VbVPJXU=
+			gR6Vo8wdtCVaThiAM4Bo6Gfx0yuqqIPnnGJGYHu5DpM=
 			</data>
 		</dict>
 		<key>Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AqfShVx52pbM2u4Xjdr9Xq0o6BXFxTtSYwabckAU+DA=
+			rifEt/uCbRKKJAaznggpvk8DgOdzfuxL/LM0f4gkBks=
 			</data>
 		</dict>
 		<key>Frameworks/PingID_SDK.framework/Modules/module.modulemap</key>
@@ -388,14 +454,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hf+ks4MG0aDFQbFqcbsshLjm6abg2nI35NegVevN1sg=
+			Z2QNltzrFOcIDofSUNBxDYClF6E+w3zFqOqt5ZPSDjM=
 			</data>
 		</dict>
 		<key>Frameworks/PingID_SDK.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vsztWdMYiiI2bm6zdlOEQXnQhLe7qxTSmm73Vul1owc=
+			f4uD8/1m9ME4hfgWGILFGiMOOaMsc+L0uovJ6DKuLwM=
 			</data>
 		</dict>
 		<key>Ionicons.ttf</key>

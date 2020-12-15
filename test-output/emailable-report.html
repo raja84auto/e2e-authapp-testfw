@@ -9,10 +9,35 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">295,400</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">77,644</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.aib.authapp.e2e_authapp_testfw.AuthApp_e2eTest</td><td><a href="#m0">authApp_e2e_iPhoneTest</a></td><td rowspan="1">1601584882123</td><td rowspan="1">295291</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.aib.authapp.e2e_authapp_testfw.AuthApp_e2eTest</td><td><a href="#m0">authApp_e2e_iPhoneTest</a></td><td rowspan="1">1608059433049</td><td rowspan="1">77521</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.aib.authapp.e2e_authapp_testfw.AuthApp_e2eTest#authApp_e2e_iPhoneTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.aib.authapp.e2e_authapp_testfw.AuthApp_e2eTest#authApp_e2e_iPhoneTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Macbooks-MacBook-Pro.local&apos;, ip: &apos;fdaa:bbcc:ddee:0:78e2:b311:9545:4bc5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/macbookpro/Documents..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 8, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, platform: MAC, platformName: IOS, platformVersion: 13.6, takesScreenshot: true, udid: 89A5DCB2-1586-4B4D-A32A-0FE..., webStorageEnabled: false}
+Session ID: 755d5dfe-e390-465d-b45d-99bf7bf4766a
+*** Element info: {Using=-ios class chain, value=**/XCUIElementTypeButton[`label == &quot;Continue&quot;`]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.FindsByIosClassChain.findElementByIosClassChain(FindsByIosClassChain.java:26)
+	at com.aib.authapp.e2e_authapp_testfw.AuthApp_e2eTest.iosPopup_LoginPingFed(AuthApp_e2eTest.java:416)
+	at com.aib.authapp.e2e_authapp_testfw.AuthApp_e2eTest.authApp_e2e_iPhoneTest(AuthApp_e2eTest.java:66)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
